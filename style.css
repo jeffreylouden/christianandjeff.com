@@ -136,6 +136,10 @@ table {
   border-spacing: 0;
 }
 
+em {
+  font-style: italic;
+}
+
 /* End Reset */
 
 body {
@@ -143,7 +147,7 @@ body {
   font-family: 'Alice', serif;
   font-size: 18px;
   line-height: 1.4;
-  padding: 20px;
+  padding: 40px;
 }
 
 a {
@@ -151,6 +155,13 @@ a {
   color: rgb(51, 51, 51);
   padding-bottom: 3px;
   text-decoration: none;
+}
+
+hr {
+  border: 0;
+  background-color: #ddd;
+  height: 1px;
+  margin: 20px 0;
 }
 
 main {
