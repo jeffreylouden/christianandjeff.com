@@ -9,42 +9,27 @@ layout: none
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  <title>{{ site.data.meta.title }}</title>
+  <title>🎉 Christian & Jeff are getting married!</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.url }}/style.css" />
 
-  <meta name="author" content="{{ site.data.meta.author }}" />
+  <meta name="author" content="Jeffrey Louden" />
   <meta name="description" content="{{ site.data.meta.description }}" />
 
-  <link rel="author" href="https://plus.google.com/112822764971954618962" />
-  <link rel="canonical" href="{{ site.url }}/" />
-  <link type="text/plain" rel="author" href="{{ site.url }}/humans.txt" />
-
-  <meta property="og:site_name" content="{{ site.name }}" />
-  <meta property="og:title" content="{{ site.data.meta.title }}" />
+  <meta property="og:site_name" content="🎉 Christian & Jeff are getting married!" />
+  <meta property="og:title" content="🎉 Christian & Jeff are getting married!" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ site.url }}/" />
   <meta property="og:description" content="{{ site.data.meta.description }}" />
-  <meta property="og:image" content="{{ site.url }}/img/fb-thumb.jpg" />
+  <meta property="og:image" content="{{ site.url }}/photobooth.jpeg" />
 
-  <meta itemprop="name" content="{{ site.data.meta.title }}" />
+  <meta itemprop="name" content="🎉 Christian & Jeff are getting married!" />
   <meta itemprop="description" content="{{ site.data.meta.description }}" />
-  <meta itemprop="image" content="{{ site.url }}/img/fb-thumb.jpg" />
+  <meta itemprop="image" content="{{ site.url }}/photobooth.jpeg" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="HandheldFriendly" content="true" />
-
-  <link rel="apple-touch-icon" href="{{ site.url }}/apple-touch-icon.png" />
-  <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/apple-touch-icon-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.url }}/apple-touch-icon-57x57-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/apple-touch-icon-72x72-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114"
-    href="{{ site.url }}/apple-touch-icon-114x114-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144"
-    href="{{ site.url }}/apple-touch-icon-144x144-precomposed.png" />
-
-  <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" />
 </head>
 
 <body>
@@ -61,31 +46,45 @@ layout: none
           <img src="https://via.placeholder.com/350/09f/fff.png" />
         </figure>
       </section>
-      <h2>♥️ Our Story</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mauris quam, varius nec ullamcorper vitae,
-        luctus
-        eu est.
-        Mauris sit amet mollis est. Nunc mattis nulla sapien, et egestas orci venenatis ac. Nulla lacinia ex eu egestas
-        malesuada. Maecenas laoreet erat in egestas consequat. Aenean sit amet finibus eros, id feugiat elit. Cras
-        imperdiet
-        eget erat id consectetur. Nunc venenatis ut massa quis interdum. Maecenas ac sapien vestibulum, tincidunt diam
-        sed,
-        tempus leo. Fusce pretium faucibus consequat. Morbi massa lacus, imperdiet quis efficitur at, porttitor dapibus
-        dolor.
-        Etiam mi dui, viverra vel posuere ut, varius ut dolor. Vivamus ultrices blandit lorem eget congue. Donec dui
-        ipsum,
-        bibendum eu lobortis non, suscipit at odio. Vestibulum a ultrices ante.</p>
-      <h2>👀 The Details</h2>
-      <p>Coming Soon</p>
-      <h2>🎁 Gift Registry</h2>
-      <p>
-        <a href="www.zola.com/registry/christianandjeff">Registry</a>
-      </p>
+      <section id="our-story">
+        <h2>♥️ Our Story</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mauris quam, varius nec ullamcorper vitae,
+          luctus eu est. Mauris sit amet mollis est. Nunc mattis nulla sapien, et egestas orci venenatis ac. Nulla
+          lacinia ex eu egestas malesuada. Maecenas laoreet erat in egestas consequat.</p>
+        <p>Aenean sit amet finibus eros, id feugiat elit. Cras imperdiet
+          eget erat id consectetur. Nunc venenatis ut massa quis interdum. Maecenas ac sapien vestibulum, tincidunt diam
+          sed,
+          tempus leo. Fusce pretium faucibus consequat. Morbi massa lacus, imperdiet quis efficitur at, porttitor
+          dapibus dolor. Etiam mi dui, viverra vel posuere ut, varius ut dolor. Vivamus ultrices blandit lorem eget
+          congue. Donec dui ipsum, bibendum eu lobortis non, suscipit at odio. Vestibulum a ultrices ante.</p>
+      </section>
+      <hr>
+      <section id="the-details">
+        <h2>👀 The Details </h2>
+        <em>(Due to COVID-19, our plans are evolving.)</em>
+        <p>
+        <h3>The Wedding</h3>
+        </p>
+        <p>
+        <h3>The Party</h3>
+        </p>
+        <p>
+        <h3>The Honeymoon</h3>
+        </p>
+        <hr>
+        <ul>
+          <li>
+            🎁 <a href="https://www.zola.com/registry/christianandjeff">Gift Registry</a>
+          </li>
+        </ul>
+
+      </section>
     </main>
     <div class="image-block">
       <img class="main-photo" src="{{ site.url }}/photobooth.jpeg" />
     </div>
   </div>
+  <script type="text/javascript" src="{{ site.url }}/confetti.min.js"></script>
   <script type="text/javascript" src="{{ site.url }}/core.js"></script>
 </body>
 
