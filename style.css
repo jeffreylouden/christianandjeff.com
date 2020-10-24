@@ -153,7 +153,7 @@ body {
 a {
   border-bottom: 1px solid #aaa;
   color: rgb(51, 51, 51);
-  padding-bottom: 3px;
+  padding-bottom: 2px;
   text-decoration: none;
 }
 
@@ -187,7 +187,7 @@ h1>span {
 
 h2 {
   font-size: 1.4rem;
-  margin-bottom: 20px;
+  margin: 0 20px 20px 0;
 }
 
 h3 {
@@ -200,13 +200,27 @@ p {
   margin-bottom: 20px;
 }
 
+li {
+  margin-bottom: 10px;
+}
+
 .us-container {
   align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-align: center;
+}
+
+.us-container figure {
+  flex-basis: 50%;
+  padding: 5px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .main-photo {
@@ -217,24 +231,8 @@ p {
   box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.7);
   display: none;
   height: 90vh;
-  left: 40%;
-  position: relative;
-  top: 3vh;
+  margin: 0 auto;
   transform: rotate(-5deg);
-}
-
-.image-block {
-  left: 50%;
-  position: fixed;
-  width: 50%;
-}
-
-@media only screen and (min-width: 500px) {
-
-  .us-container {
-    flex-flow: row wrap;
-    flex-direction: row;
-  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -245,7 +243,49 @@ p {
     margin-bottom: 20px;
   }
 
+  .image-block {
+    flex-basis: 50%;
+    flex-grow: 2;
+    position: fixed;
+    right: 0;
+    width: 50%;
+  }
+
   .main-photo {
     display: block;
+    flex-basis: 50%;
   }
+}
+
+/* Thank You Box */
+
+.thank-you-container {
+  max-width: 800px;
+  margin: 60px auto 0;
+}
+
+.heart {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 500px;
+}
+
+.heart::after,
+.heart::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  height: 1px;
+  background-color: #ccc;
+  width: 220px;
+}
+
+.heart::after {
+  right: 0;
+}
+
+.heart::before {
+  left: 0;
 }
