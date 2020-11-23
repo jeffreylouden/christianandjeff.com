@@ -140,6 +140,10 @@ em {
   font-style: italic;
 }
 
+strong {
+  font-weight: 600;
+}
+
 /* End Reset */
 
 body {
@@ -167,6 +171,13 @@ hr {
 main {
   margin-top: 60px;
   max-width: 800px;
+}
+
+.container.landing {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
 }
 
 header {
@@ -221,6 +232,11 @@ li {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.love {
+  font-size: 3rem;
+  margin: 0 10px;
 }
 
 .main-photo {
