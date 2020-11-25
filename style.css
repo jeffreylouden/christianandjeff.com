@@ -305,3 +305,7 @@ img {
 .heart::before {
   left: 0;
 }
+
+#confetti-canvas {
+  left: 0 !important;
+}
